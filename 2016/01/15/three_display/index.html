@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
+  
+  <meta name="description" content="码农之路从此开始">
+  
+
+  <!--Author-->
+  
+  <meta name="author" content="涂鹏昌">
+  
+
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="display最重要的三种属性"/>
+  
+  <!--Open Graph Description-->
+  
+      <meta property="og:description" content="码农之路从此开始" />
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="千里之行"/>
+  <!--Type page-->
+  
+      <meta property="og:type" content="article" />
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Title -->
+  
+  <title>display最重要的三种属性 - 千里之行</title>
+
+
+  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
+
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!----------------------------
+  https://github.com/GallenHu/hexo-theme-Daily
+
+ _____            _   _
+|  __ \          (_) | |
+| |  | |   __ _   _  | |  _   _
+| |  | |  / _` | | | | | | | | |
+| |__| | | (_| | | | | | | |_| |
+|_____/   \__,_| |_| |_|  \__, |
+                          __/ |
+                         |___/
+
+    --------------------------->
+
+</head>
+
+
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="https://hexo.io/logo.svg" alt="千里之行" height="60">
+        
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/.">
+                
+                  首页
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/about">
+                
+                  关于我
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            display最重要的三种属性
+            
+          </h1>
+          <p class="posted-on">
+          2016-01-15
+          </p>
+          <div class="tags-links">
+            
+              
+            
+          </div>
+        </div>
+        <!-- Post Main Content -->
+        <div class="entry-content">
+          <blockquote>
+<p>摘要: 本文介绍主要讲述什么是内联元素（inline）、块元素（block）和内联块元素（inline-block），元素之间的转换</p>
+</blockquote>
+<h1 id="三种display的异同"><a href="#三种display的异同" class="headerlink" title="三种display的异同"></a>三种display的异同</h1><p>三种常见display属性最重要的区别</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left">独占一行</th>
+<th style="text-align:left">支持宽高</th>
+<th style="text-align:left">上下margin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">block</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+</tr>
+<tr>
+<td style="text-align:left">inline-block</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+</tr>
+<tr>
+<td style="text-align:left">inline</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">N</td>
+</tr>
+</tbody>
+</table>
+<p>除此之外，内容区域的大小还有一些特点</p>
+<p>block不指定宽度时，宽度将占满父级元素；不指定高度时，高度由内容撑开。</p>
+<p>inline-block不指定宽度和高度时，都由内容撑开</p>
+<p>inline不能指定宽高，只能由内容撑开</p>
+<h1 id="常用标签的默认display属性"><a href="#常用标签的默认display属性" class="headerlink" title="常用标签的默认display属性"></a>常用标签的默认display属性</h1><p>block：<div>, <p>, </p><h1>, <form>, <ul> 和 <li></li></ul></form></h1></div></p>
+<p>inline：<span>, <a>, <label>, <input>, <img>, <strong> 和<em></em></strong></label></a></span></p>
+<h1 id="元素转换"><a href="#元素转换" class="headerlink" title="元素转换"></a>元素转换</h1><p>当我们想改变这些默认属性时，我们就可以用display来进行元素之间的转换.</p>
+<p>例如，将块元素div和内联元素span进行并排显示</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span><span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">			div,span&#123;</div><div class="line">				height: 100px;</div><div class="line">				color: white;</div><div class="line">				background: red;</div><div class="line">                display:inline-block;</div><div class="line">			&#125;</div><div class="line">		<span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span>div1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span>div2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>span1<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">span</span>&gt;</span>span2<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>代码效果图：</p>
+<p><img src="/images/three_display1.jpg" alt="three_display"></p>
+
+        </div>
+      </article>
+    </div>
+    <!-- Comments -->
+    <div class="container">
+      
+<section id="comment">
+  <!-- <h1 class="title">留言</h1> -->
+
+  
+</section>
+
+
+    </div>
+    <!-- Pre or Next -->
+    <div class="nav-links">
+      
+      
+        <div class="nav-next">
+          <a href="/2016/01/06/box_model/" rel="prev">下一页 <span class="meta-arraw meta-arraw-right"></span></a>
+        </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <!-- Footer-widgets -->
+<div class="footer-widgets">
+  <div class="row inside-wrapper">
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">关于本站</h1>
+        <div class="custom-widget-content">
+          
+          码农之路从此开始
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">与我联系</h1>
+        <div class="widget-text">
+          
+            
+              <a href="https://github.com/tupengchang" class="icon icon-github" target="_blank">github</a>
+            
+              <a href="mailto:654933713@qq.com" class="icon icon-mail" target="_blank">mail</a>
+            
+          
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">站内搜索</h1>
+        <div class="widget-text">
+          <form onSubmit="return appDaily.submitSearch('')">
+            <p>
+              <input type="text" placeholder="search..." id="homeSearchInput">
+            </p>
+            <!-- <input type="submit" value="GO"> -->
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span>千里之行 &copy; 2017</span>
+    
+      <span class="split">|</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a></span>
+    
+  </p>
+</footer>
+
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="/js/app.js"></script>
+
+
+
+</body>
+
+</html>
